@@ -17,9 +17,9 @@ function! smartSynctex#backward_search(file, line) abort
 	if l:flag
 		exec 'tabnew +' .  a:line . ' ' . a:file
 	endif
-	exec 'normal z'
 	if foldclosed(a:line) > 0
 		exec 'norm zv'
 	endif
+	exec 'normal zz'
 	exec 'setlocal cursorline'
 endfunction
