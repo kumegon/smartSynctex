@@ -13,7 +13,7 @@ function! smartSynctex#backward_search(file, line) abort
 				call win_gotoid(winid)
 				let l:flag = 0
 				exec 'normal! m`'
-				exec 'call cursor('.a:line.'0)'
+				exec 'call cursor('.a:line.',0)'
 				break
 			endif
 		endfor
