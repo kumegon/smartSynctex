@@ -26,4 +26,5 @@ function! smartSynctex#backward_search(file, line) abort
 	endif
 	exec 'normal zz'
 	exec 'setlocal cursorline'
+	silent exec "!/usr/bin/osascript" "-e 'tell application" "\"iTerm2\"" "to activate'"
 endfunction
